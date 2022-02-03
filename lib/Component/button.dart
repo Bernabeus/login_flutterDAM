@@ -22,7 +22,8 @@ class LoginSignupButton extends StatelessWidget {
             ),
           ),
           style: ButtonStyle(
-            backgroundColor: MaterialStateProperty.all(Colors.black45),
+            backgroundColor:
+                MaterialStateProperty.all(Color.fromARGB(255, 130, 126, 189)),
           ),
         ),
       ),

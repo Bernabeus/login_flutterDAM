@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.red[100],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -31,6 +31,10 @@ class _HomePageState extends State<HomePage> {
                   clipBehavior: Clip.hardEdge,
                   child: Center(
                     child: Text('Cerrar sesión'),
+                  ),
+                  style: ButtonStyle(
+                    backgroundColor: MaterialStateProperty.all(
+                        Color.fromARGB(255, 130, 126, 189)),
                   ),
                   onPressed: () async {
                     await _signOut();

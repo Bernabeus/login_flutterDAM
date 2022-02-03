@@ -45,7 +45,7 @@ class _SignupScreenState extends State<SignupScreen> {
                     Container(
                       height: double.infinity,
                       width: double.infinity,
-                      color: Colors.grey[200],
+                      color: Colors.red[100],
                       child: SingleChildScrollView(
                         padding:
                             EdgeInsets.symmetric(horizontal: 25, vertical: 120),

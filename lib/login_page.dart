@@ -34,7 +34,7 @@ class _LoginPageState extends State<LoginPage> {
                     Container(
                       height: double.infinity,
                       width: double.infinity,
-                      color: Colors.grey[200],
+                      color: Colors.red[100],
                       child: SingleChildScrollView(
                         padding:
                             EdgeInsets.symmetric(horizontal: 25, vertical: 120),
@@ -62,6 +62,8 @@ class _LoginPageState extends State<LoginPage> {
                               textAlign: TextAlign.center,
                               decoration: kTextFieldDecoration.copyWith(
                                 hintText: 'Email',
+                                fillColor: Colors.green,
+                                focusColor: Colors.blue,
                                 prefixIcon: Icon(
                                   Icons.email,
                                   color: Colors.black,
@@ -151,7 +153,38 @@ class _LoginPageState extends State<LoginPage> {
                                   Hero(
                                     tag: '1',
                                     child: Text(
-                                      'Registrate aqui',
+                                      'Registrate',
+                                      style: TextStyle(
+                                          fontSize: 21,
+                                          fontWeight: FontWeight.bold,
+                                          color: Colors.black),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 40),
+                            GestureDetector(
+                              onTap: () {
+                                Navigator.of(context).push(
+                                  MaterialPageRoute(
+                                    //modificar esto
+                                    builder: (context) => SignupScreen(),
+                                  ),
+                                );
+                              },
+                              child: Row(
+                                children: [
+                                  Text(
+                                    "¿Olvidaste tu contraseña?",
+                                    style: TextStyle(
+                                        fontSize: 20, color: Colors.black87),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Hero(
+                                    tag: '1',
+                                    child: Text(
+                                      'Clic aqui',
                                       style: TextStyle(
                                           fontSize: 21,
                                           fontWeight: FontWeight.bold,
