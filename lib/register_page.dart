@@ -21,7 +21,7 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.grey[200],
+        backgroundColor: Colors.red[100],
         elevation: 0,
         leading: IconButton(
           icon: Icon(
@@ -113,7 +113,8 @@ class _SignupScreenState extends State<SignupScreen> {
 
                                     ScaffoldMessenger.of(context).showSnackBar(
                                       SnackBar(
-                                        backgroundColor: Colors.blueGrey,
+                                        backgroundColor:
+                                            Color.fromARGB(255, 130, 126, 189),
                                         content: Padding(
                                           padding: const EdgeInsets.all(8.0),
                                           child: Text(

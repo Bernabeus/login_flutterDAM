@@ -6,6 +6,7 @@ import '../constants.dart';
 import 'home_page.dart';
 import 'register_page.dart';
 import 'main.dart';
+import 'reset.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -42,7 +43,7 @@ class _LoginPageState extends State<LoginPage> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Text(
-                              "Login",
+                              "Iniciar Sesión",
                               style: TextStyle(
                                   fontSize: 50,
                                   color: Colors.black,
@@ -133,7 +134,7 @@ class _LoginPageState extends State<LoginPage> {
                                 }
                               },
                             ),
-                            SizedBox(height: 10),
+                            SizedBox(height: 30),
                             GestureDetector(
                               onTap: () {
                                 Navigator.of(context).push(
@@ -169,7 +170,7 @@ class _LoginPageState extends State<LoginPage> {
                                 Navigator.of(context).push(
                                   MaterialPageRoute(
                                     //modificar esto
-                                    builder: (context) => SignupScreen(),
+                                    builder: (context) => ResetScreen(),
                                   ),
                                 );
                               },
